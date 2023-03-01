@@ -37,8 +37,18 @@ namespace Diziler
 
         private void button4_Click(object sender, EventArgs e)
         {
-            char[] harfler = { 'a', 'b', 'c', 'd'};
+            char[] harfler = { 'a', 'b', 'c', 'd' };
             label4.Text = harfler[0].ToString();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string[] adlar = { "Ali", "Veli", "Murat" };
+            for (int i = 0; i < adlar.Length; i++)
+            {
+                listBox1.Items.Add(adlar[i]);
+            }
+
         }
     }
 }
